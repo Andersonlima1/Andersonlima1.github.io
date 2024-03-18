@@ -33,19 +33,19 @@ const Projects = () => {
             className="w-full grid h-full md:grid-cols-4
           lg:max-w-[640px] mb-12 mx-auto md:border border-none"
           >
-          {categories.map((category: string | undefined, index: number) => {
+            {categories.map((category: string | undefined, index: number) => {
   return (
     <TabsTrigger
-      onClick={()
-                  value={category}
+      onClick={() => setCategory(category?.toString())} // Convert to string
+          value={category}
                   key={index}
                   className="capitalize w-[162px]
               md:w-auto"
-                >
-                  {category}
-                </TabsTrigger>
-              );
-            })}
+    />
+  );
+})}
+    <TabsTrigger
+   
           </TabsList>
           <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects.map((project, index) => {
