@@ -33,10 +33,10 @@ const Projects = () => {
             className="w-full grid h-full md:grid-cols-4
           lg:max-w-[640px] mb-12 mx-auto md:border border-none"
           >
-            {categories.map((category: string, index: number) => {
-              return (
-                <TabsTrigger
-                  onClick={() => setCategory(category)}
+          {categories.map((category: string | undefined, index: number) => {
+  return (
+    <TabsTrigger
+      onClick={()
                   value={category}
                   key={index}
                   className="capitalize w-[162px]
