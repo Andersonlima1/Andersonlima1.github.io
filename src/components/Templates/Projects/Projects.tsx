@@ -5,9 +5,9 @@ import ProjectCard from "@/components/Other/ProjectCard/ProjectCard";
 
 import { projectData } from "@/data/project";
 
-const uniqueCategories: string[] = [
+const uniqueCategories: (string | undefined)[] = [
   "All Projects",
-  ...Array.from(new Set(projectData.map((item) => item.category?.toString())))
+  ...Array.from(new Set(projectData.map((item) => item.category)))
 ];
 const Projects = () => {
   const [categories, setCategories] = useState(uniqueCategories);
