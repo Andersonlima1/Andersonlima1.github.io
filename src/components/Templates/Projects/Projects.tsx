@@ -5,8 +5,8 @@ import ProjectCard from "@/components/Other/ProjectCard/ProjectCard";
 
 import { projectData } from "@/data/project";
 
-const uniqueCategories: string[] = [
-  " All Projects", 
+const uniqueCategories: (string | undefined)[] = [
+  "All Projects",
   ...Array.from(new Set(projectData.map((item) => item.category)))
 ];
 
@@ -64,3 +64,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
