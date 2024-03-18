@@ -7,9 +7,8 @@ import { projectData } from "@/data/project";
 
 const uniqueCategories: string[] = [
   "All Projects",
-  ...Array.from(new Set(projectData.map((item) => item.category)))
+  ...Array.from(new Set(projectData.map((item) => item.category?.toString())))
 ];
-
 const Projects = () => {
   const [categories, setCategories] = useState(uniqueCategories);
   const [category, setCategory] = useState("All Projects");
