@@ -1,7 +1,7 @@
 export const projectData = [
    {
     image: "/MAC.png",
-    category: "",
+    category: "full stack",
     name: "Mac Cosmetics",
     description: "Leading cosmetics brand known for vibrant colors & high-quality products.",
     link: "https://www.maccosmetics.com.br/",
@@ -9,7 +9,7 @@ export const projectData = [
   },
   {
     image: "/webera.png",
-    category: "",
+     category: "full stack",
     name: "Webera",
     description: "A technology company focused on innovative solutions for various sectors, including software, web development, and IT consulting.",
     link: "https://webera.com/"
@@ -17,7 +17,7 @@ export const projectData = [
   },
   {
     image: "/decathlon.png",
-    category: "",
+ category: "full stack",
     name: "Decathlon",
     description: "Global sports retail chain providing a wide range of sports goods.",
     link: "https://www.decathlon.com.br/"
@@ -25,7 +25,7 @@ export const projectData = [
   },
   {
     image: "/agibank.png",
-    category: "",
+     category: "full stack",
     name: "Agibank",
     description: "Brazilian digital bank offering diverse financial services since 1999.",
     link: "https://agibank.com.br/",
@@ -33,7 +33,7 @@ export const projectData = [
   },
   {
     image: "/cielo.png",
-    category: "",
+ category: "full stack",
     name: "Cielo",
     description: "Leading electronic payment tech company in Latin America.",
     link: "https://www.cielo.com.br/",
@@ -41,7 +41,7 @@ export const projectData = [
   },
   {
     image: "/brisanet.png",
-    category: "",
+   category: "full stack",
     name: "Brisanet",
     description: "Internet & telecom provider in Northeast Brazil, offering high-speed services.",
     link: "https://www.brisanet.com.br/",
@@ -49,7 +49,7 @@ export const projectData = [
   },
   {
     image: "/allergan.png",
-    category: "",
+ category: "full stack",
     name: "Allergan",
     description: "Global biotech & pharma company, known for innovations in healthcare.",
     link: "https://www.whirlpool.com/",
@@ -57,7 +57,7 @@ export const projectData = [
   },
   {
     image: "/whirpool.png",
-    category: "",
+ category: "full stack",
     name: "Whirpool",
     description: "Global home appliances manufacturer, renowned for innovation & sustainability.",
     link: "https://developer-blue-portfolio-vagnermengali.vercel.app/",
@@ -65,7 +65,7 @@ export const projectData = [
   },
   {
     image: "/mototalk.png",
- 
+  category: "full stack",
     name: "Mototalk ",
     description: "Specialized in radio communication solutions for various sectors.",
     link: "https://us.mototalk.com/",
@@ -73,7 +73,7 @@ export const projectData = [
   },
   {
     image: "/LUMA.png",
- 
+  category: "full stack",
     name: "Luma Health ",
     description: "Healthcare tech company facilitating patient-provider communication.",
     link: "https://www.lumahealth.io/",
