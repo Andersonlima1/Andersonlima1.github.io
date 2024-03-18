@@ -42,7 +42,7 @@ const InitialHome = () => {
 
               <Link
                 target="_blank"
-                href="https://drive.google.com/file/d/1-kh_Qrf7ef2CdM7-8wrXkWtXv0UfKPdP/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TBx2RYBGGv1bZfA_b9w9VMwaE3HOy6XV/view?usp=sharing"
                 aria-label="cv"
               >
                 <Button variant="secondary" className="gap-x-2">
