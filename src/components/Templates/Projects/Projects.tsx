@@ -5,7 +5,7 @@ import ProjectCard from "@/components/Other/ProjectCard/ProjectCard";
 
 import { projectData } from "@/data/project";
 
-const uniqueCategories: (string | undefined)[] = [
+const uniqueCategories: string[] = [
   "All Projects",
   ...Array.from(new Set(projectData.map((item) => item.category)))
 ];
@@ -15,7 +15,7 @@ const Projects = () => {
   const [category, setCategory] = useState("All Projects");
 
   const filteredProjects = projectData.filter((project) => {
-    return category === "All Projects"
+    return category === "todos os projetos"
       ? project
       : project.category === category;
   });
@@ -64,4 +64,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
