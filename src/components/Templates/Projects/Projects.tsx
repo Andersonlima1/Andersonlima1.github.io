@@ -6,16 +6,16 @@ import ProjectCard from "@/components/Other/ProjectCard/ProjectCard";
 import { projectData } from "@/data/project";
 
 const uniqueCategories: string[] = [
-  "todos os projetos",
+  "all the projects",
   ...Array.from(new Set(projectData.map((item) => item.category)))
 ];
 
 const Projects = () => {
   const [categories, setCategories] = useState(uniqueCategories);
-  const [category, setCategory] = useState("todos os projetos");
+  const [category, setCategory] = useState("all the projects");
 
   const filteredProjects = projectData.filter((project) => {
-    return category === "todos os projetos"
+    return category === "all the projects"
       ? project
       : project.category === category;
   });
@@ -27,7 +27,7 @@ const Projects = () => {
           className="section-title mb-8 xl:mb-16 text-center
         mx-auto"
         >
-          MEUS PROJETOS
+          MY PROJECTS
         </h2>
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
           <TabsList
