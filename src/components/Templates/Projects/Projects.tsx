@@ -15,7 +15,7 @@ const Projects = () => {
   const [category, setCategory] = useState("All Projects");
 
   const filteredProjects = projectData.filter((project) => {
-    return category === "todos os projetos"
+    return category === "all projects"
       ? project
       : project.category === category;
   });
