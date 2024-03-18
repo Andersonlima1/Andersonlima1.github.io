@@ -5,16 +5,17 @@ import ProjectCard from "@/components/Other/ProjectCard/ProjectCard";
 
 import { projectData } from "@/data/project";
 
-const uniqueCategories: (string | undefined)[] = [
-  "All Projects",
+const uniqueCategories: string[] = [
+  "todos os projetos",
   ...Array.from(new Set(projectData.map((item) => item.category)))
 ];
+
 const Projects = () => {
   const [categories, setCategories] = useState(uniqueCategories);
-  const [category, setCategory] = useState("All Projects");
+  const [category, setCategory] = useState("todos os projetos");
 
   const filteredProjects = projectData.filter((project) => {
-    return category === "all projects"
+    return category === "todos os projetos"
       ? project
       : project.category === category;
   });
@@ -26,26 +27,26 @@ const Projects = () => {
           className="section-title mb-8 xl:mb-16 text-center
         mx-auto"
         >
-          My Projects
+          MEUS PROJETOS
         </h2>
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
           <TabsList
             className="w-full grid h-full md:grid-cols-4
           lg:max-w-[640px] mb-12 mx-auto md:border border-none"
           >
-            {categories.map((category: string | undefined, index: number) => {
-  return (
-    <TabsTrigger
-      onClick={() => setCategory(category?.toString())} // Convert to string
-          value={category}
+            {categories.map((category: string, index: number) => {
+              return (
+                <TabsTrigger
+                  onClick={() => setCategory(category)}
+                  value={category}
                   key={index}
                   className="capitalize w-[162px]
               md:w-auto"
-    />
-  );
-})}
-    <TabsTrigger
-   
+                >
+                  {category}
+                </TabsTrigger>
+              );
+            })}
           </TabsList>
           <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects.map((project, index) => {
